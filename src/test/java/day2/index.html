@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XPath Practice Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+    .section { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; }
+    .section h2 { margin-top: 0; }
+    .highlight { color: green; }
+  </style>
+</head>
+<body>
+  <h1>XPath Practice Page</h1>
+
+  <div class="section" id="basic">
+    <h2>Basic XPath</h2>
+    <p>This is a <span class="highlight">test</span> paragraph.</p>
+    <p>This is another paragraph with a <a href="#" id="link1">link</a>.</p>
+  </div>
+
+  <div class="section" id="attributes">
+    <h2>Attributes</h2>
+    <input type="text" name="username" value="admin" />
+    <input type="password" name="password" value="1234" />
+    <button type="submit" id="loginBtn">Login</button>
+  </div>
+
+  <div class="section" id="functions">
+    <h2>Functions</h2>
+    <p class="description">Learn XPath step by step.</p>
+    <p class="description">Start practicing XPath with real HTML.</p>
+    <p class="description">Use functions like <code>contains()</code>, <code>starts-with()</code>, etc.</p>
+  </div>
+
+  <div class="section" id="nesting">
+    <h2>Nesting and Hierarchy</h2>
+    <ul id="fruit-list">
+      <li class="fruit">Apple</li>
+      <li class="fruit">Banana</li>
+      <li class="fruit">Cherry</li>
+    </ul>
+    <div>
+      <table border="1">
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr><td>Alice</td><td>30</td></tr>
+        <tr><td>Bob</td><td>25</td></tr>
+        <tr><td>Charlie</td><td>35</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section" id="siblings">
+    <h2>Siblings and Axes</h2>
+    <div>
+      <h3>Team</h3>
+      <p class="member">Member A</p>
+      <p class="member">Member B</p>
+      <p class="member">Member C</p>
+    </div>
+    <div>
+      <h3>Managers</h3>
+      <p class="manager">Manager X</p>
+      <p class="manager">Manager Y</p>
+    </div>
+  </div>
+
+  <div class="section" id="mixed">
+    <h2>Complex Structures</h2>
+    <div class="card" data-type="article">
+      <h4>Article Title</h4>
+      <p>Written by <span class="author">John Doe</span></p>
+    </div>
+    <div class="card" data-type="note">
+      <h4>Note Title</h4>
+      <p>Reminder: Buy milk</p>
+    </div>
+    <div class="card" data-type="task">
+      <h4>Task Title</h4>
+      <ul>
+        <li>Do laundry</li>
+        <li>Pay bills</li>
+        <li>Call mom</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
