@@ -16,6 +16,8 @@ public class XpathAttributes {
 		
 		WebElement passwordBox=driver.findElement(By.xpath("//input[@type='password']"));
 	    passwordBox.sendKeys("abceADim");
+	    
+	    
 	}
 
 }
