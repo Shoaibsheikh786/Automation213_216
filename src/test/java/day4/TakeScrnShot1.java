@@ -18,9 +18,8 @@ public class TakeScrnShot1 {
 		//Interface in selenium which will help us to take screenshot
 		//1.TakesScreenshto
 		//Convert our driver to TakesScreenshot Inteface
-		 
-		TakesScreenshot tk1=(TakesScreenshot)driver;
-       
+		
+		TakesScreenshot tk1=(TakesScreenshot)driver;       
 		//2. in TakesScreenshot there is one method, getScreenshot
 		  File file=  tk1.getScreenshotAs(OutputType.FILE);
 		//3. Copy the screenshot to C:D;
