@@ -13,7 +13,8 @@ public class ReadConfigFiles {
 		//1.File : Location of the file
 		//C:\Users\Admin\eclipse-workspace\Automation213_216\config.properties
 	    //. OR C:\Users\Admin\eclipse-workspace\Automation213_216
-		File file=new File("./config.properties");
+		String pL=System.getProperty("user.dir");
+		File file=new File(pL+"/config.properties");
 		FileInputStream fis=new FileInputStream(file);
 		
 		//if you want to read a file whose extention is .properties 
@@ -25,7 +26,7 @@ public class ReadConfigFiles {
 		
 		//proerty i need 1 value : key --> value
 		
-	  String str=	pr.getProperty("abc");
+	  String str=	pr.getProperty("browser");
 	  
 	  System.out.println(str);
 		

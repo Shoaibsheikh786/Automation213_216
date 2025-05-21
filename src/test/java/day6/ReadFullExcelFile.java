@@ -1,4 +1,4 @@
-package day5;
+package day6;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,24 +11,33 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class DataDriven1 {
-
-	public static void main(String[] args) throws EncryptedDocumentException, IOException {
-	//1. File Location
-		File file=new File("./mydata.xlsx");
-	//2. FileInputStream : Connection
-		FileInputStream fis=new FileInputStream(file);
-	//3. Workbook :sheets -> rows -> colum
-		Workbook wb=WorkbookFactory.create(fis);
-	//4. Read Sheet 
-		Sheet sheet=  wb.getSheetAt(1);
-    //5. Row row 
-		Row row= sheet.getRow(3);
-	//6. Cell 
-		 Cell cell= row.getCell(1);
-    System.out.println(cell);
-		 
-		 
-	}
+public class ReadFullExcelFile {
 	
+	public static void main(String[] args) throws EncryptedDocumentException, IOException {
+		
+		//1. File 
+		File file=new File("./mydata.xlsx");
+		
+		//2. FileInputStream 
+		FileInputStream fis=new FileInputStream(file);
+		//3. Workbook: sheet : row : col(cell)
+		Workbook wb=WorkbookFactory.create(fis);
+		//import org.apache.poi.ss.usermodel.WorkbookFactory;
+		Sheet sheet=wb.getSheetAt(0);
+		//loop : for
+		for(int i=0;i<sheet.getLastRowNum();i++)
+		{
+			Row row=sheet.getRow(i);  //i-> 0,row-> first row
+			for(int j=0;j<row.getLastCellNum();j++)
+			{
+				Cell cell=row.getCell(j);   //j->1 
+				System.out.print(cell+" ");
+			}
+			System.out.println();
+		}
+		
+		
+		
+	}
+
 }
