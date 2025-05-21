@@ -37,7 +37,9 @@ public class ExplicitWait {
 		
 	//	Actions act=new Actions(); //97%  3%
 		
+	//practice [constructor chaining, methods, inheritance, Encapsulation]
 		
+		//important Topic pending : Page Object Model
 	}
 
 }
