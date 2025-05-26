@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgday2.DataProvidersConcept">
+      <class name="testNgday3.RetryFailedTest">
         <methods>
-          <include name="validLoginWithInvalid1" invocation-numbers="0"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- testNgday2.DataProvidersConcept -->
+      </class> <!-- testNgday3.RetryFailedTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
