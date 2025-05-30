@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgday3.RetryFailedTest">
+      <class name="pom.LoginTest">
         <methods>
-          <include name="test1"/>
+          <include name="verifyLoginFucntionality"/>
         </methods>
-      </class> <!-- testNgday3.RetryFailedTest -->
+      </class> <!-- pom.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

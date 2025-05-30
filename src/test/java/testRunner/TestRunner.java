@@ -13,8 +13,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="./Features/dataDriven.feature",
-		glue="stepDefinition"
+		features="./Features/addTocart.feature",
+		glue="stepDefinition" //[all classes]   
 		
 		
 		)

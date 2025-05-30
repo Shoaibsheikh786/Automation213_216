@@ -4,11 +4,26 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class DataDriven {
+	
+	
 	WebDriver driver;
+	
+	//Execute before for each scenario
+		@Before(order=1)
+		public void setUp()
+		{
+		  System.out.println("Before 1");	
+		}
+		@Before(order=2)
+		public void setUp2()
+		{
+		  System.out.println("Before 2");	
+		}
 	@Given("user opens the browser")
 	public void user_opens_the_browser() {
 	    // Write code here that turns the phrase above into concrete actions
@@ -30,6 +45,8 @@ public class DataDriven {
 
 	@When("user enters passwrod as {string}")
 	public void user_enters_passwrod_as(String pass) {
+   //1234 
+		// ...
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(pass);
 	}
 

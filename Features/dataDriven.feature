@@ -8,7 +8,7 @@ And user enters passwrod as <password>
 And users clicks on login button
 Examples:
 |username|password|
-|"hello1"|"pass1"|
+|"12345"|"pass1"|
 |"hello2"|"pass2"|
 |"hadmin3"|"pass3"|
 
