@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-03T14:33:15 IST" name="Default suite" finished-at="2025-06-03T14:33:21 IST" duration-ms="6217">
+  <suite started-at="2025-06-04T14:51:14 IST" name="Default suite" finished-at="2025-06-04T14:51:19 IST" duration-ms="4083">
     <groups>
     </groups>
-    <test started-at="2025-06-03T14:33:15 IST" name="Default test" finished-at="2025-06-03T14:33:21 IST" duration-ms="6217">
-      <class name="pom2.FacebookLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pom2.FacebookLoginTest@7ee8290b]" started-at="2025-06-03T14:33:15 IST" name="setUp" finished-at="2025-06-03T14:33:20 IST" duration-ms="5546" status="PASS">
+    <test started-at="2025-06-04T14:51:14 IST" name="Default test" finished-at="2025-06-04T14:51:19 IST" duration-ms="4083">
+      <class name="day7.FileUpload">
+        <test-method signature="fileUp()[pri:0, instance:day7.FileUpload@6ad82709]" started-at="2025-06-04T14:51:15 IST" name="fileUp" finished-at="2025-06-04T14:51:19 IST" duration-ms="4010" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest1()[pri:0, instance:pom2.FacebookLoginTest@7ee8290b]" started-at="2025-06-03T14:33:21 IST" name="loginTest1" finished-at="2025-06-03T14:33:21 IST" duration-ms="579" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest1 -->
-      </class> <!-- pom2.FacebookLoginTest -->
+        </test-method> <!-- fileUp -->
+      </class> <!-- day7.FileUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
